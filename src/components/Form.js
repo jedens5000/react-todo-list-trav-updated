@@ -13,7 +13,7 @@ const Form = ({ setInputText, todos, setTodos, inputText }) => {
     ]);
     // setInputText = "";
     setInputText("");
-    console.log(setInputText);
+    // console.log(setInputText);
   };
   // *******NEED TO UPDATE FUNCTIONALITY TO CLEAR THE TEXT INPUT FIELD AFTER SUBMIT. (Line 14 not working)
   return (
