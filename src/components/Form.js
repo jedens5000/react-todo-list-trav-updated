@@ -11,17 +11,16 @@ const Form = ({ setInputText, todos, setTodos, inputText }) => {
       ...todos,
       { text: inputText, completed: false, id: Math.random() * 1000 },
     ]);
-    // setInputText = "";
     setInputText("");
     // console.log(setInputText);
   };
-  // *******NEED TO UPDATE FUNCTIONALITY TO CLEAR THE TEXT INPUT FIELD AFTER SUBMIT. (Line 14 not working)
   return (
     <form>
       <input
         value={inputText}
         onChange={inputTextHandler}
         type="text"
+        placeholder="enter task"
         className="todo-input"
       />
       <button onClick={submitTodoHandler} className="todo-button" type="submit">

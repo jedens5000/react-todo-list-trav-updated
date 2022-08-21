@@ -5,7 +5,7 @@ const TodoList = ({ todos, setTodos }) => {
   //////////////API FETCH//////////////////////////
   useEffect(() => {
     fetch("https://jsonplaceholder.typicode.com/users/1/todos?_limit=5")
-      .then((response) => response.json()) //<----this converts it to JSON
+      .then((response) => response.json()) //<--this converts to JSON
       .then((todos) => {
         setTodos(todos);
       });

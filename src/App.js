@@ -3,8 +3,6 @@ import "./index.css";
 import Form from "./components/Form";
 import TodoList from "./components/TodoList";
 
-////////////////////////////////////////////////////////////////////////////////
-//////////////////////BELOW WORKS FINE AS IS////////////////////////////////////
 function App() {
   const [inputText, setInputText] = useState("");
   const [todos, setTodos] = useState([]);
@@ -26,5 +24,5 @@ function App() {
     </div>
   );
 }
-////////////////////////////////////////////////////////////////////////////////
+
 export default App;
